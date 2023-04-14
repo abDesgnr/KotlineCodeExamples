@@ -1,0 +1,25 @@
+// Kotline example of class to perform arithmetic on two integers
+// April 14, 2023
+fun main() {
+    var num1 = 5
+	var num2 = 6
+    
+   //Instantiate class
+   val add2Int = IntegerOperator().add(num1, num2)
+   println("The addition of two numbers is $add2Int")
+   
+   val sub2Int = IntegerOperator().subtract(num1, num2)
+   println("The subtraction of two numbers is $sub2Int")
+}
+
+// Operator Class
+class IntegerOperator {
+    // Addition
+    fun add(a: Int, b: Int): Int {
+        return a + b
+    }
+    // Subtraction
+    fun subtract(a: Int, b: Int): Int {
+        return a - b
+    }
+}
